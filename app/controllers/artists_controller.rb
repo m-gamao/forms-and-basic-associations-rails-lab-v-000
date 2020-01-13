@@ -15,7 +15,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.new(artist_params)
 
     if @artist.save
-      redirect_to @artist
+      redirect to @artist
     else
       render :new
     end
